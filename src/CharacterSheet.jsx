@@ -6,7 +6,7 @@ import CharacterClasses from "./CharacterClasses";
 const CharacterSheet = () => {
   const [attributes, setAttributes] = useState(
     ATTRIBUTE_LIST.reduce((accum, attribute) => {
-      accum[attribute] = { value: 0, modifier: 0 };
+      accum[attribute] = { value: 10, modifier: 0 };
       return accum;
     }, {})
   );
