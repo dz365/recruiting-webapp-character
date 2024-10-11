@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ATTRIBUTE_LIST } from "./consts";
 import AttributesEditor from "./AttributesEditor";
+import CharacterClasses from "./CharacterClasses";
 
 const CharacterSheet = () => {
   const [attributes, setAttributes] = useState(
@@ -12,6 +13,7 @@ const CharacterSheet = () => {
   return (
     <div>
       <AttributesEditor attributes={attributes} setAttributes={setAttributes} />
+      <CharacterClasses attributes={attributes} />
     </div>
   );
 };
