@@ -73,7 +73,7 @@ Character sheets are defined by the following high-level concepts
   - The total value of a skill is the sum of points spent and the skill’s corresponding ability modifier (see `SKILL_LIST` for what ability modifier affects each skill). 
     - For example. a character with a 2 Dexterity Modifier and spending 3 points on Acrobatics would have a total skill value of 5
   - Display each skill in a row in a separate section. For example, Acrobatics 
-    - for a character with 12 dexterity may look like `Acrobatics - points: 3 [+] [-] modifier (Dex): 2 total: 5`
+    - for a character with 14 dexterity may look like `Acrobatics - points: 3 [+] [-] modifier (Dex): 2 total: 5`
 6. Save the character(s) to an API so they can be retrieved when the app starts next time. 
     - Make a post request with a JSON payload to https://recruiting.verylongdomaintotestwith.ca/api/{{github_username}}/character to save data, and a get request to https://recruiting.verylongdomaintotestwith.ca/api/{{github_username}}/character to retrieve the data. It will accept any valid JSON blob and return the most recent version
     - for example, if your github username is mjohnston, you would use https://recruiting.verylongdomaintotestwith.ca/api/{mjohnston}/character (include the curly braces)
